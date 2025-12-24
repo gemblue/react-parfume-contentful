@@ -134,24 +134,26 @@ Notes: Top: Orange, Cinnamon | Middle: Honey, Nutmeg | Base: Vanilla, Tonka Bean
    - **Space ID**
    - **Content Delivery API - access token**
 
-### 5. Configure Environment Variables
+### 5. Configure Environment Variables (EdgeOne)
 
-Edit file `.env` di root project:
+Set VITE_ variables in your EdgeOne project settings (Project > Settings > Environment Variables). These variables are inlined at build-time by Vite, so they must be present before the site is built on EdgeOne:
 
-```env
-VITE_CONTENTFUL_SPACE_ID=your_space_id_here
-VITE_CONTENTFUL_ACCESS_TOKEN=your_access_token_here
+```
+VITE_CONTENTFUL_SPACE_ID=your_actual_space_id
+VITE_CONTENTFUL_ACCESS_TOKEN=your_actual_access_token
 VITE_CONTENTFUL_ENVIRONMENT=master
 VITE_WHATSAPP_NUMBER=628123456789
 ```
 
-Ganti `your_space_id_here` dan `your_access_token_here` dengan credentials dari step 4.
+> **Note:** Because this approach embeds the token in the client bundle, ensure you are comfortable with the token being accessible in the built assets (use Content Delivery API token, not Management API token).
 
 ### 6. Test
-1. Restart dev server: `npm run dev`
-2. Buka http://localhost:5173
-3. Scroll ke section "Koleksi Parfume Gentleman"
-4. Products dari Contentful akan muncul! ✅
+1. Restart dev server (local testing): `npm run dev` (if using local VITE_ copies in `.env`).
+2. Deploy/rebuild on EdgeOne so it picks up the new VITE_ env variables.
+3. Open the site (e.g., `https://your-site.edgeone.app`) and scroll to the "Koleksi Parfume Gentleman" section.
+4. Products from Contentful should appear directly in the page. ✅
+
+If products do not appear, check the browser console/network for failed requests, and verify the `VITE_` variables are set correctly in the EdgeOne project settings for the target environment (preview/production).
 
 ---
 

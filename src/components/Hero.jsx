@@ -67,7 +67,7 @@ const Hero = () => {
             <div className="hero-image">
               <div className="product-showcase">
                 <div className="showcase-placeholder">
-                  <img style={{ width: '100%' }} src="https://parfumes-1389906377.cos.ap-singapore.myqcloud.com/Gemini_Generated_Image_xdoz2yxdoz2yxdoz.png?q-sign-algorithm=sha1&q-ak=AKIDlYznt80zfgkOuh9tJvst-04Fpli2P-W2fVX2BpAU0TB8yMz8JWqaXmWchWqAfF5m&q-sign-time=1766553530;1766557130&q-key-time=1766553530;1766557130&q-header-list=host&q-url-param-list=ci-process&q-signature=79515d3c345406c766089cb84d5c727d46aeab05&x-cos-security-token=WNBbolRfYPMpGVxV7ZlcrFIrXIF0PMVa0fd605e0c50b14b589a42dab500a0587juSJTBJuzFQus8QpKPX6Ap4siaLbmaOtJgJTJbWQ90VVSO4Nz9z4qKDmNjpB-XH9VtES6qsIspHZpjxeSrfXxBRuoSTgAuS82SOru2LJ3uokCM842nstnDdQmuuFJD71wqlFTfDmAZXopoYobDOaW5TzLLDhhUX8_pjT4SCY-0zYExQ7lM8lP4TSS3d8Znx7&ci-process=originImage" alt="" />
+                  <img style={{ width: '100%' }} src="https://parfumes-1389906377.cos.ap-singapore.myqcloud.com/Gemini_Generated_Image_xdoz2yxdoz2yxdoz.png" alt="" />
                 </div>
                 <div className="showcase-glow"></div>
               </div>
