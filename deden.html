@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Deden Ahmad Muhar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            padding: 50px 45px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+        
+        .content {
+            padding: 45px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-size: 1.4em;
+            color: #1f2937;
+            margin-bottom: 20px;
+            font-weight: 700;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4f46e5;
+            display: inline-block;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #6b7280;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .info-value {
+            color: #1f2937;
+            font-size: 1em;
+        }
+        
+        .address-full {
+            grid-column: 1 / -1;
+        }
+        
+        .experience-item, .education-item {
+            padding: 25px;
+            margin-bottom: 20px;
+            background: #fafafa;
+            border-radius: 8px;
+            border-left: 4px solid #4f46e5;
+            transition: all 0.2s ease;
+        }
+        
+        .experience-item:hover, .education-item:hover {
+            background: #f3f4f6;
+            transform: translateX(3px);
+        }
+        
+        .experience-item:last-child, .education-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .job-title {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 6px;
+        }
+        
+        .company {
+            color: #4f46e5;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        
+        .period {
+            color: #6b7280;
+            font-size: 0.9em;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        
+        .skill-badge {
+            background: white;
+            color: #4f46e5;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            border: 2px solid #4f46e5;
+            transition: all 0.2s ease;
+        }
+        
+        .skill-badge:hover {
+            background: #4f46e5;
+            color: white;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+            
+            .header {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            
+            .experience-item:hover, .education-item:hover {
+                transform: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 35px 30px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 25px;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .section-title {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Deden Ahmad Muhar</h1>
+            <p>Driver Profesional | Sales Staff | Chef</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Data Pribadi</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Tempat, Tanggal Lahir</span>
+                        <span class="info-value">Bandung, 17 Agustus 1990</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Agama</span>
+                        <span class="info-value">Islam</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Status Perkawinan</span>
+                        <span class="info-value">Kawin</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Kewarganegaraan</span>
+                        <span class="info-value">WNI</span>
+                    </div>
+                    <div class="info-item address-full">
+                        <span class="info-label">Alamat Lengkap</span>
+                        <span class="info-value">Kp. Cilutung RT 001/RW 002, Kel. Singajaya, Kec. Cihampelas, Kab. Bandung Barat, Jawa Barat</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Pengalaman Kerja</h2>
+                
+                <div class="experience-item">
+                    <div class="job-title">Motoris</div>
+                    <div class="company">PT Mayora Indah Tbk & PT Enesis</div>
+                    <div class="period">2024 - Sekarang</div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="job-title">Driver</div>
+                    <div class="company">PT Amidis Tirta Mulya</div>
+                    <div class="period">2020 - 2023</div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="job-title">Sales Staff Penjualan</div>
+                    <div class="company">Rumah Buah</div>
+                    <div class="period">2016 - 2019</div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="job-title">Chef</div>
+                    <div class="company">H-Don Food Sdn Bhd (Restoran), Malaysia</div>
+                    <div class="period">2014 - 2015</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Pendidikan</h2>
+                
+                <div class="education-item">
+                    <div class="job-title">SMA Kartika Siliwangi 2 Bandung</div>
+                    <div class="period">Lulus 2011</div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="job-title">SMPN 4 Padalarang</div>
+                    <div class="period">Lulus 2008</div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="job-title">SDN 3 Cimareme</div>
+                    <div class="period">Lulus 2005</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Keahlian & Kemampuan</h2>
+                <div class="skills-container">
+                    <div class="skill-badge">Kerja Tim</div>
+                    <div class="skill-badge">Leadership</div>
+                    <div class="skill-badge">Mengemudi</div>
+                    <div class="skill-badge">Penjualan</div>
+                    <div class="skill-badge">Memasak</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
