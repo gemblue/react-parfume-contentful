@@ -18,18 +18,20 @@ Landing page untuk Beast Parfume - Parfume Gentleman eksklusif untuk pria dengan
 npm install
 ```
 
-2. Copy `.env.example` ke `.env` dan isi dengan credentials Contentful Anda:
+2. Copy `.env.example` ke `.env` untuk lokal development (opsional):
 ```bash
 cp .env.example .env
 ```
 
-3. Konfigurasi di `.env`:
+3. **Production (EdgeOne):** Tambahkan server-side environment variables di EdgeOne Project > Settings > Environment Variables:
 ```
-VITE_CONTENTFUL_SPACE_ID=your_space_id_here
-VITE_CONTENTFUL_ACCESS_TOKEN=your_access_token_here
-VITE_CONTENTFUL_ENVIRONMENT=master
-VITE_WHATSAPP_NUMBER=628123456789
+CONTENTFUL_SPACE_ID=your_space_id_here
+CONTENTFUL_ACCESS_TOKEN=your_access_token_here
+CONTENTFUL_ENVIRONMENT=master
+VITE_WHATSAPP_NUMBER=628123456789    # client-side non-secret value
 ```
+
+> **Note:** Jangan menyimpan Contentful secrets (SPACE_ID / ACCESS_TOKEN) sebagai `VITE_` variables di production — simpan sebagai server-side vars (`CONTENTFUL_*`) di EdgeOne. `.env` with `VITE_` variables is okay for local testing only.
 
 4. Run development server:
 ```bash
